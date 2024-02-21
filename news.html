@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taza khabar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <nav>
+         <div class="main container flex">
+            <a href="#"onclick="reload()" class="logo">
+                <img src="taza.jpg" alt="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="hover-link" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+                    <li class="hover-link" id="Technology"onclick="onNavItemClick('Technology')">Technology</li>
+                </ul>
+                
+            </div>
+            <div class="search-sec flex">
+                <input id="search-text" type="text" class="news-info" placeholder="eg-Lifestyle">
+                <button id="search-info" class="search-info">Search</button>
+            </div>
+
+         </div>
+      </nav> 
+      <main>
+        <div class="cards container flex " id="cards-container">
+            
+           
+        </div> 
+      </main>
+      
+      
+      <template id="news-card">
+        
+            <div class="card">
+                <div class="card-holder">
+                    <img src="https://via.placeholder.com/400/200" alt="news-image" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="title">This is news</h3>
+                    <h6 id="news-source">Date 20/01/2024</h6>
+                    <p class="news-desc " id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, assumenda.</p>
+
+                </div>
+                </div>
+      </template>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    color: var(--accent-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav{
+    background-color:rgb(178, 227, 229);
+    box-shadow: 0 0 4px ;
+    position: fixed;
+    top: 0;
+    z-index: 90;
+    left: 0;
+    right: 0;
+    
+}
+.nav-links li{
+    padding: 7px;
+    font-size: 20px;
+    gap: 10px;
+    color: black;
+}
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+    color: red;
+}
+.main{
+    justify-content: space-between;
+    padding-block: 7px;
+    
+}
+.search-sec{
+
+    height: 30px;
+    gap: 8px;
+}
+.news-info{
+   width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 5px;
+    border: 2px solid;
+    font-family: "Poppins",sans-serif;
+}
+.search-info{
+    color: white;
+    width: 100px;
+    padding: 8px 25px;
+    font-size: 15px;
+    border-radius: 4px var(--accent-color);
+    border: none;
+    cursor: pointer;
+    background-color:rgba(230, 211, 74, 0.687)
+}
+.search-info:hover{
+    background-color: var(--accent-color);
+}
+.logo img{
+    padding-top: 10px ;
+    height: 90px;
+    width: 90px;
+    
+}
+main{
+    padding-block: 20px;
+   margin-top: 190px;
+}
+.cards{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card{
+    width: 350px;
+    min-height: 450px;
+    box-shadow:  0 0 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.card:hover{
+    box-shadow:  1px 1px 0px ;
+    background-color: #9fdfff;
+    transform: translate(-2px);
+}
+.card-holder img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 12px;
+}
+#news-source{
+    margin-block: 14px;
+}
